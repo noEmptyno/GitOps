@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: tetris
-  name: tetris
+    app: gitops-nginx
+  name: gitops-nginx
 spec:
-  replicas: 12
+  replicas: 5
   selector:
     matchLabels:
-      app: tetris
+      app: gitops-nginx
   template:
     metadata:
       labels:
-        app: tetris
+        app: gitops-nginx
     spec:
       containers:
-      - image: 192.168.1.10:8443/tetris-img
-        name: tetris
+      - image: nginx
+        name: nginx
