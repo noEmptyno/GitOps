@@ -5,7 +5,7 @@ metadata:
     app: tetris
   name: tetris
 spec:
-  replicas: 6
+  replicas: 12 
   selector:
     matchLabels:
       app: tetris
