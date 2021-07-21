@@ -17,5 +17,3 @@ spec:
       containers:
       - image: 192.168.1.10:8443/tetris-img
         name: tetris
-        port :
-        - containerPort: 6555
